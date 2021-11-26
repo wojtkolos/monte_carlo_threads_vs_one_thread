@@ -25,8 +25,8 @@ int main(int argc, char* argv[])
 
 		elapsed = finish - start;
 		std::cout << "Pi: " << pi << " for n=" << throws << " time " << elapsed.count() << std::endl;
-		throws *= 10;
-
+		
+		monte.setNumberOfHits(throws *= 10);
 		y();
 	}
 	/*
