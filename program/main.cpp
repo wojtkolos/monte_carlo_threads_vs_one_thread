@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 		auto finish = std::chrono::high_resolution_clock::now();
 
 		std::chrono::duration<double, std::milli> elapsed = finish - start;
-		std::cout << "Pi: " << pi << " for n=" << throws << " time " << elapsed.count() << std::endl;
+		std::cout << "PI: " << pi << " for n=" << throws << " time: " << elapsed.count() << std::endl;
 
 
 		start = std::chrono::high_resolution_clock::now();
@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 		finish = std::chrono::high_resolution_clock::now();
 
 		elapsed = finish - start;
-		std::cout << "Pi: " << pi << " for n=" << throws << " time " << elapsed.count() << std::endl;
+		std::cout << "PI: " << pi << " for n=" << throws << " time: " << elapsed.count() << std::endl;
 		
 		monte.setNumberOfHits(throws *= 10);
 		y();
